@@ -24,6 +24,8 @@ router.get('/store_all', function (req, res, next) {
             console.log(fields);
             var result = 'rows : ' + JSON.stringify(rows) + '<br><br>' +
                 'fields : ' + JSON.stringify(fields);
+
+                
             res.send(rows);
         } else {
             console.log('query error : ' + err);
