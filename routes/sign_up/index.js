@@ -34,6 +34,7 @@ router.get('/', function (req, res, next) {
     // res.json({ title: 'Quoca!' });
 });
 
+
 //insert 쿼리
 var sql = 'INSERT INTO CUSTOMER VALUES (?,?,?,?,?,?)';
 //insert 값 화면으로부터 받아옴
