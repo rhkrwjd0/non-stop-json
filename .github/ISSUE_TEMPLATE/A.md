@@ -4,7 +4,7 @@ about: 만들어주세요!
 title: ''
 labels: A개발
 assignees: rhkrwjd0
-
+projects: Quaca
 ---
 
 ## 제목
