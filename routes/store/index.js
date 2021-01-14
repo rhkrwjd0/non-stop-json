@@ -5,7 +5,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const app = require('../../app');
-var conn = require('../components/db');
+var conn = require('../components/db2');
 var first = require("../function/first");
 
 
@@ -17,7 +17,7 @@ router.get('/', function (req, res, next) {
 
 //스토어 select
 router.get('/store_all', function (req, res, next) {
-    conn.connection.query('SELECT * FROM STORE', function (err, rows, fields) {
+    conn.connection.query('SELECT * FROM QSTORE', function (err, rows, fields) {
         first.select();
         if (!err) {
             console.log(rows);
