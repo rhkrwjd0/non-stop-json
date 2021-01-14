@@ -4,7 +4,6 @@ about: 작성해주세요!
 title: ''
 labels: B문서
 assignees: rhkrwjd0
-
 ---
 
 ## 제목
