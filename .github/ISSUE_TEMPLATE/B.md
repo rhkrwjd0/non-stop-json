@@ -1,9 +1,9 @@
 ---
-name: 문서요구
-about: 요구 이유
+name: "[문서 작성]"
+about: 작성해주세요!
 title: ''
 labels: B문서
-assignees: ''
+assignees: rhkrwjd0
 
 ---
 
