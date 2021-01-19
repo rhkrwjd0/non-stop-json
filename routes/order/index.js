@@ -12,7 +12,7 @@ let b = '5';
 //   console.log(rows[i].name);
 // }
 router.get('/', function (req, res, next) {
-  conn.connection.query('SELECT * FROM goods where goodsNo <=' +a, function (err, rows, fields) {
+  conn.connection.query('SELECT * FROM QMenu', function (err, rows, fields) {
     if (!err) {
         console.log(rows);
         console.log(fields);
@@ -21,15 +21,15 @@ router.get('/', function (req, res, next) {
         console.log(rows.length);
         for(var i=0; i<rows.length; i++){
          const iname = []
-         iname.push(rows[i].name);
-         const icost =[]
-        icost.push(rows[i].cost);
+         iname.push(rows[i].MenuName);
+         const iprice =[]
+         iprice.push(rows[i].Price);
          console.log(iname);
-         console.log(icost);
+         console.log(iprice);
         }
   
         //res.render('orders',{ title: '주문목록', menu: iname,cost:icost, number: b,total:(icost)*(b) });
-        res.render('orders',{ title: '주문목록', menu: rows[0].name,cost:rows[0].cost, number: b,total:(rows[0].cost)*(b) });
+        res.render('orders',{ title: '주문목록', menu: rows[0].MenuName,cost:rows[0].Price, number: b,total:(rows[0].Price)*(b) });
         
     } else {
         console.log('query error : ' + err);

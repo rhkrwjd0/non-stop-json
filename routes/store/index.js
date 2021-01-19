@@ -17,17 +17,18 @@ router.get('/', function (req, res, next) {
 
 //스토어 select
 router.get('/store_all', function (req, res, next) {
-    conn.connection.query('SELECT * FROM STORE', function (err, rows, fields) {
+    conn.connection.query('SELECT * FROM QSTORE', function (err, rows, fields) {
         first.select();
         if (!err) {
+            console.log("--------------------------------");
             console.log(rows);
+
             console.log(fields);
             var result = 'rows : ' + JSON.stringify(rows) + '<br><br>' +
-                'fields : ' + JSON.stringify(fields);
-
-                
+                'fields : ' + JSON.stringify(fields);       
             res.send(rows);
         } else {
+            console.log("---------------------------ww-----");
             console.log('query error : ' + err);
             res.send(err);
         }
@@ -35,10 +36,10 @@ router.get('/store_all', function (req, res, next) {
 });
 
 //스토어 insert
-var sql = 'INSERT INTO STORE VALUES (?,?,?,?,?,?,?)';
+var sql = 'INSERT INTO QSTORE VALUES (?,?,?,?,?,?,?,?,?,?)';
 //insert 값 화면으로부터 받아옴
 //var params =[STOREID,AREA,ADDR,COLOR,CEO,USEYN,COLOR_CD];
-var params =['GN002','창원','창원시 남악대로 314,102호','레트로','김문수','Y','04'];
+var params =['8905434567811','창원시 남악대로 314,102호','카페 느림','053-175-3456','89054','3456781','35.1468191001','126.85464790001','Y','2021-01-19 09:27:23'];
 router.get('/addst', function (req, res, next) {
     conn.connection.query(sql,params, function (err, rows, fields) {
         if (!err) {
@@ -53,8 +54,8 @@ router.get('/addst', function (req, res, next) {
   });
 
 //상품 select
-router.get('/goods', function (req, res, next) {
-    conn.connection.query('SELECT * FROM goods', function (err, rows, fields) {
+router.get('/Menu', function (req, res, next) {
+    conn.connection.query('SELECT * FROM QMenu', function (err, rows, fields) {
         if (!err) {
             console.log(rows);
             console.log(fields);
@@ -68,8 +69,8 @@ router.get('/goods', function (req, res, next) {
     }); 
   });
 //상품 insert
-var sql = 'INSERT INTO goods VALUES (?,?,?,?)';
-var params =[6,'우유','1000','호주'];
+var sql = 'INSERT INTO QMenu VALUES (?,?,?,?,?,?,?,?)';
+var params =['D0006','카페라떼','D', null,'4000',null, 'Y','2021-01-19 13:19:30' ];
 
 router.get('/addpdc', function (req, res, next) {
     conn.connection.query(sql,params, function (err, rows, fields) {
