@@ -8,16 +8,25 @@
     <h1><%= title %></h1>
     <p>Hello ! <%= title %> !</p>
 
-    <table>
-        <tr>
-          <td> 아 이 디 : <input type="text" style="width:80px"></td>
-        <td> <button" style = "width:68px; height:23px" onclick="QStore()"/> <button>pass </button></td>
-      </tr>
-        <tr> <td>  패스워드 : <input type="text" style= "width:80px"> </td></td></tr>
-        <tr> <td>
-           
-            <input type="button" style = "width:60px; height:23px"  value="로그인"/>
-       </td> </tr>
-    </table>
+    <form methot = "GET">
+       메뉴이름: <select name="menu"> 
+          <option value="1">Drink</option>
+          <option value="2">Bakery</option>
+          <option value="3">Goods</option>
+        </select>
+      매장넘버: <select name="menu">
+          <option value="1">Store1</option>
+          <option value="2">Store2</option>
+          <option value="3">Store3</option>
+          <option value="4">Store4</option>
+          <option value="5">Store5</option>
+          <option value="6">Store6</option>
+          <option value="7">Store7</option>
+          <option value="8">Store8</option>
+          <option value="9">Store9</option>
+          <option value="10">Store10</option>
+        </select>
+        <input type = "submit" value="이동">
+    </form>
   </body>
 </html>
