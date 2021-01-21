@@ -1,10 +1,9 @@
 ---
-name: 개발명
-about: 개발 이유
+name: "[문서 작성]"
+about: 작성해주세요!
 title: ''
-labels: A개발
-assignees: HeroNoah
-
+labels: B문서
+assignees: rhkrwjd0
 ---
 
 ## 제목

@@ -1,10 +1,9 @@
 ---
-name: 문서요구
-about: 요구 이유
+name: "[기능 개발]"
+about: 만들어주세요!
 title: ''
-labels: B문서
-assignees: ''
-
+labels: A개발
+assignees: rhkrwjd0
 ---
 
 ## 제목

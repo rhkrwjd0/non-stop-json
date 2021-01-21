@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var first = require("./function/first");
 
+
 //quoka
 router.get('/', function (req, res, next) {
     res.render('index', { title: 'Quoca!' });
