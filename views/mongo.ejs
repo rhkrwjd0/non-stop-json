@@ -45,6 +45,10 @@
     <form id="frm1" method="GET">
         <table border="1" style="width:280px;line-height: 30px;">
             <tr>
+                <td>주문자ID : <input type="text" name="UserId" style="width:180px"  value="<%= UserId %>" ></td>  
+            </tr>
+            <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+            <tr>
                 <td> 주문자 : <input type="text" name="UserName" style="width:56px" value="<%= UserName %>"></td>
             </tr>
             <tr>
@@ -57,11 +61,9 @@
                 <td>금액 : <input type="text" name="Price" style="width:56px" value="<%= Price %>"> </td>
             </tr>
             <tr>
-                <td>주문시간 : <input type="text" name="date"  value="<%= date %>" ></td>
+                <td>주문시간 : <input type="text" name="date" style="width:180px"  value="<%= date %>" ></td>
             </tr>
-            <tr>
-                <td>주문자ID : <input type="text" name="UserId" value="<%= UserId %>" ></td>  
-            </tr>
+
             <tr>
                 <td><input value="조회" type="submit" onclick='btn_click("search")' />
                     <input value="등록" type="submit" onclick='btn_click("insert")' />

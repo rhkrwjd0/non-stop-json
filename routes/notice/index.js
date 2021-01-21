@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 //var date = moment().format('YYYY-MM-DD HH:mm:ss');
 
 // Connection URL
-var url = 'mongodb://localhost:27017/test';
+var url = 'mongodb://localhost:27017/notice';
 
 router.get('/', function (req, res, next) {
     res.render('mongo',{UserName:' ',MenuName:' ' ,Count:' ', Price:' ', date: ' ', UserId:' '});
@@ -18,43 +18,38 @@ router.get('/order', function (req, res) {
         //assert.equal(null, err);
         console.log("Connected successfully to server");
         db = client.db('notice');
-        
-        db.collection('notice').findOne({UserName: UserName},function(err,doc){
+        console.log(UserName);
+        db.collection('notice').find().toArray(function(err,doc){
             if(err) return res.status(500).json({error: err});
             if(!doc) return res.status(404).json({error: 'UserName not found'});
             res.json(doc); 
             console.log("데이터 조회 !");
             client.close();
             });
-        // dba.find({UserName: UserName},function(err,doc){
-        //     if(err) return res.status(500).json({error: err});
-        //     if(!doc) return res.status(404).json({error: 'UserName not found'});
-        //     res.json(doc); 
-        //     console.log("데이터 조회 !");
-        //     });
     });
 });
 
 
 router.get('/search', function (req, res) {
     console.log('~~~~~~~~~~~~~~~~~~~');
-    let UserName = req.query.UserName;
-    console.log(UserName);
+    let UserId = req.query.UserId;
+    console.log(UserId);
     MongoClient.connect(url, { useUnifiedTopology: true }, function (err, client) {
         console.log("Connected successfully to server");   
         var db = client.db('notice');
-        db.collection('notice').findOne({UserName: UserName},function(err,doc){
-
+        var id = mongoose.Types.ObjectId(UserId);
+        var myquery = {_id : id};
+        console.log(myquery);
+        db.collection('notice').findOne(myquery,function(err,doc){
+        var data = JSON.stringify(doc);
         if(err) return res.status(500).json({error: err});
-        if(!doc) return res.status(404).json({error: 'UserName not found'});
+        if(!doc) return res.status(404).json({error: 'UserId not found'});
         res.render('mongo',{UserName:doc.UserName, MenuName:doc.MenuName, Count:doc.count, Price:doc.Price, date:doc.date, UserId:doc._id });
         console.log("데이터 조회 !");
     });
 });
 });
-// if(err) throw err;
-// res.render('mongo',{UserName:doc.UserName, MenuName:doc.MenuName, Count:doc.count, Price:doc.Price, date:doc.date, UserId:doc._id });
-// console.log("데이터 조회 !");
+
 router.get('/insert', function (req, res) {
     let UserName = req.query.UserName;
     let MenuName = req.query.MenuName;
@@ -93,7 +88,7 @@ router.get('/update', function (req, res) {
         var db = client.db('notice');
         var id = mongoose.Types.ObjectId(UserId);
         var myquery = {_id : id};
-        var newvalues = { $set: {UserId:UserId, MenuName:MenuName, count:Count, Price:Price, date:date} };
+        var newvalues = { $set: {UserId:UserId, UserName:UserName,MenuName:MenuName, count:Count, Price:Price, date:date} };
         db.collection('notice').updateOne(myquery, newvalues, function(err,res){
             if (err) throw err;
             console.log("1 document updated");
