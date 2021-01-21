@@ -4,13 +4,13 @@ var createError = require('http-errors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+
 var first = require("./function/first");
-
-
+var store = require("../Quaca_StoreData.json");
 
 //quoka
 router.get('/', function (req, res, next) {
-    res.render('index', { title: 'Quoca!' });
-  });
+    res.send({store});
+});
 
 module.exports = router;
