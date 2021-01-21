@@ -11,15 +11,34 @@ const { json } = require('express');
 
 //quoka
 router.get('/', function (req, res, next) {
-
-    const store = req.query.store;
-    console.log(store);
-    var a = {menu}.menu.Menu;
-   if(store == 1){
-        aa = a.Store_10;
-   } 
-    res.json(aa);
-
+    var amenu = req.query.menu;
+    var store = req.query.store;
+    console.log(amenu ,store);
+    if(amenu == "D"){
+        if(store == "1"){
+            res.send(menu.Menu.Store_1.Drink)
+        }else if(store =="2"){
+            res.send(menu.Menu.Store_2.Drink)
+        }else if(store =="3"){
+            res.send(menu.Menu.Store_3.Drink)
+        }
+    }else if(amenu == "B"){
+        if(store == "1"){
+            res.send(menu.Menu.Store_1.Bakery)
+        }else if(store =="2"){
+            res.send(menu.Menu.Store_2.Bakery)
+        }else if(store =="3"){
+            res.send(menu.Menu.Store_3.Bakery)
+        }
+    }else if(amenu == "G"){
+        if(store == "1"){
+            res.send(menu.Menu.Store_1.Goods)
+        }else if(store =="2"){
+            res.send(menu.Menu.Store_2.Goods)
+        }else if(store =="3"){
+            res.send(menu.Menu.Store_3.Goods)
+        }
+    }
 });
 
 module.exports = router;
