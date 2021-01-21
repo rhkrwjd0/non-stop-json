@@ -13,10 +13,5 @@ router.get('/', function (req, res, next) {
     res.render('index', { title: 'Quoca!' });
   });
 
-
-router.get('/', function (req, res, next) {
-    res.render('index', { title: 'Quoca!' });
-  });
-
   
 module.exports = router;
