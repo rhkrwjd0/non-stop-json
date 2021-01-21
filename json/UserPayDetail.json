@@ -1,0 +1,38 @@
+{ // 결제uid 210121-001로 요청하면 맞는 api돌려주기
+        "orderNum": "10",
+        "payUid": "210121-001",
+        "payMethod": "신용카드",
+        "orderCnt": 3,
+        "orderMenu": [
+            {
+                "name": "음료",
+                "price": "5000",
+                "option": {
+                    "temp": "Hot",
+                    "size": "Grande",
+                    "cup": "일회용컵"
+                }
+            },
+            {
+                "name": "빵",
+                "price": "5000",
+                "option": {
+                    "warm" : "따뜻하게 데움"
+                }
+            },
+            {
+                "name": "음료",
+                "price": "5000",
+                "option": {
+                    "temp": "Ice",
+                    "size": "Tall",
+                    "cup": "일회용컵"
+                }
+            }
+        ],
+        "orderStatus": "준비완료", 
+        "payCompleteTime": "2021-01-21 10:53",
+        "menuCompleteTime": "2021-01-21 10:55",
+        "totalPrice": "15000"
+    }
+    
