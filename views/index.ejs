@@ -1,23 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Hello ! <%= title %> !</p>
 
-    <table>
-        <tr>
-          <td> 아 이 디 : <input type="text" style="width:80px"></td>
-        <td> <button" style = "width:68px; height:23px" onclick="QStore()"/> <button>pass </button></td>
-      </tr>
-        <tr> <td>  패스워드 : <input type="text" style= "width:80px"> </td></td></tr>
-        <tr> <td>
-           
-            <input type="button" style = "width:60px; height:23px"  value="로그인"/>
-       </td> </tr>
-    </table>
-  </body>
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <meta charset="utf-8" />
+</head>
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  <p>Hello ! USER !</p> <br />
+
+  <table>
+    <tr>
+      <td>
+        <form action='/users/users' method="GET" style="display:inline-block;">
+          사용자조회 (전체검색 %): <input name="UserName" style="width:80px" type="text" /> <input value="이동" type="submit" />
+        </form>
+        <form action='/users' method="GET" style="display:inline-block;"> <input value="회원가입" type="submit" /></form>
+      </td>
+    </tr>
+    <br />
+    <tr>
+      <td>
+        <form action='/qstore/store_all' method="GET" style="display:inline-block;">
+          매장조회 (전체검색 %): <input name="StoreName" style="width:80px; " type="text" /> <input value="이동" type="submit" />
+        </form>
+        <form action='/Qstore' method="GET" style="display:inline-block;"> <input value="매장추가" type="submit" /></form>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <!-- <form action='/menumenu/menu' method="GET" style="display:inline-block;">
+        상품조회 (전체검색 %): <input name="menu" style = "width:80px" type="text" />  <input value="이동" type="submit" />
+      </form>
+      <form action='/menumenu' method="GET" style="display:inline-block;"> <input value="상품추가" type="submit" /></form> -->
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <form action='/notice/order' method="GET" style="display:inline-block;">
+          (알림 nosql) 주문자: <input name="UserName" style="width:80px" type="text" />
+          <input value="조회" type="submit" />
+        </form>
+
+
+        <form action='/notice' method="GET" style="display:inline-block;"> <input value="주문" type="submit" /></form>
+        <!-- <form action='/notice' method="GET" style="display:inline-block;"> <input value="주문 수정" type="submit" /></form> -->
+      </td>
+    </tr>
+    <!-- <tr>
+      <td>
+        <form action='/orders' method="GET">
+          주문서 (%상품이름%) : <input name="MenuName" style="width:80px" type="text" />
+          , 갯수: <input name="Count" style="width:30px" type="text" />
+          <input value="이동" type="submit" />
+        </form>
+      </td>
+    </tr> -->
+  </table>
+</body>
+
 </html>
+
+
+<!-- 
+<table>
+  <tr>
+    <td>
+       아 이 디 : <input type="text" style="width:80px">
+      </td>
+    </td>
+  </tr>
+  <tr>
+    <td>
+       패스워드 : <input type="text" style= "width:80px">
+      </td>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <input type="button" style = "width:68px; height:23px"  value="회원가입"/>
+      <input type="button" style = "width:60px; height:23px"  value="로그인"/>
+    </td>
+   </tr>
+</table> -->
