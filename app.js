@@ -9,9 +9,8 @@ var indexRouter = require('./routes/index'); //사용자
 var usersRouter = require('./routes/sign_up/index.js'); //사용자
 var ordersRouter = require('./routes/order/index.js'); //주문
 var QstoreRouter = require('./routes/store/index.js'); //매장
-//var menulistRouter = require('./routes/Qmenu/index.js');  //(메뉴)
-//var storeRouter = require('./routes/store.js');  //쿼카테스트 json데이터(매장)
-var noticeRouter = require('./routes/notice/index.js'); //쿼카 몽고db 테스트
+var storeRouter = require('./routes/store.js');  //쿼카테스트 json데이터(매장)
+var menuRouter = require('./routes/menu.js');  //쿼카테스트 json데이터(매뉴)
 
 var cors = require('cors');
 var app = express();
@@ -34,9 +33,8 @@ app.use('/', indexRouter); //사용자
 app.use('/users', usersRouter); //사용자-
 app.use('/orders', ordersRouter); //주문서
 app.use('/Qstore',QstoreRouter); //매장
-//app.use('/menumenu',menulistRouter); //메뉴
-//app.use('/store',storeRouter); //쿼카테스트 json데이터(매장)
-app.use('/notice',noticeRouter);  //쿼카 몽고db 테스트
+app.use('/store',storeRouter); //쿼카테스트 json데이터(매장)
+app.use('/menu',menuRouter); //쿼카테스트 json데이터(메뉴)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
