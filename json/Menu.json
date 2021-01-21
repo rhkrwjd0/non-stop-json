@@ -1,0 +1,41 @@
+
+{
+    "Drink": { // 음료 5개
+        "D001": {
+            "id":"D001",
+            "name": "이름",
+            "enName": "메뉴 영어로..",
+            "price": "가격",
+            "imgUrl": "메뉴사진url",
+            "option": {
+                "temp": ["Hot","Ice"],
+                "size": ["Tall","Grande","Venti"], // 사이즈 1,2개여도됨
+                "cup": ["매장컵","일회용컵","개인컵"]
+            },
+            "best": true // 베스트 한두개만 체크해주시면 표시할게요
+        }
+    },
+    "Bakery": { // 베이커리 5개
+        "B001": {
+            "id":"B001",
+            "name": "이름",
+            "enName": "메뉴 영어로..",
+            "price": "가격",
+            "imgUrl": "메뉴사진url",
+            "option": {
+                "warm": ["따뜻하게 데움", "데우지않음"] // 옵션 없으면 option:{} 이렇게만 두시면됩니다.
+            },
+            "best": false
+        }
+    },
+    "Goods": { // 상품 5개
+        "G001": {
+            "id":"G001",
+            "name": "이름",
+            "enName": "메뉴 영어로..",
+            "price": "가격",
+            "imgUrl": "메뉴사진url",
+            "option" : {}
+        }
+    }
+}
