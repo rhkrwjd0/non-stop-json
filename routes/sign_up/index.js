@@ -21,7 +21,7 @@ router.get('/', function (req, res, next) {
   router.get('/users', function (req, res) {
     let UserName = req.query.UserName;
     conn.connection.query('SELECT * FROM QUser where UserName like' +'"'+UserName + '"' , function (err, rows, fields) {
-        console.log(rows.length);
+        // console.log(rows.length);
         if (!err) {
             console.log(rows);
             console.log(fields);
@@ -39,7 +39,7 @@ router.get('/idcheck', function (req, res) {
     console.log(UID);
     if(UID != ' ' || null ){
         conn.connection.query('SELECT * FROM QUser where UID = '+ '"'+UID+'"', function (err, rows, fields) {
-            console.log(rows.length);
+            //console.log(rows.length);
             if (rows.length == 0) { 
                 res.render('sign_up', { title :"회원가입",  overLap: 'ID 사용가능', UID: UID });
             } else {
@@ -68,7 +68,7 @@ router.get('/signup', function (req, res) {
 
     if((UID != ' ' || null) || (PassWord != '' || null) ){
     conn.connection.query('SELECT * FROM QUser where UID = ' + '"' + UID + '"', function (err, rows, fields) {
-        console.log(rows.length);
+        //console.log(rows.length);
         if (rows.length == 0) { 
             var sql = 'INSERT INTO QUser VALUES (?,?,?,?,?,?,?,?,?,?)';
             var params =[UID,PassWord,UserName,Address,TelNo,Email, Gender, CmCode, UseYn ,date];
