@@ -24,16 +24,17 @@
           $("C").hide();
         }
       });
-    });
+   
 
-    $("#home").click(function () {
-            $("form").attr("action", "/notice/home");
-        });
-        function btn_click(str) {
-            if (str == "home") {
-                frm1.action = "/notice/home";
-            }
-        }
+    // $("#home").click(function () {
+    //         $("form").attr("action", "/index");
+    //     });
+    //     function btn_click(str) {
+    //         if (str == "home") {
+    //             frm1.action = "/index";
+    //         }
+    //     }
+    //   });
   </script>
 </head>
 
@@ -81,9 +82,8 @@
       </tr>
       <tr>
         <td><input value="등록" onclick="javascript: frm1.action='/users/signup';"  type="submit" /> 
-          <input value="홈으로" type="submit" onclick='btn_click("home")' />
         </td> 
-        
+      
       </tr>
     </table>
   </form>
