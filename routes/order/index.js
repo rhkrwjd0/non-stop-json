@@ -2,7 +2,7 @@ const { name } = require('ejs');
 var express = require('express');
 var router = express.Router();
 const app = express();
-var conn = require('../components/db');
+var conn = require('../components/mariaDB');
 
 
 // router.post('/',function(req,res,next){

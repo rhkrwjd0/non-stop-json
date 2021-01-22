@@ -1,18 +1,17 @@
 var express = require('express');
 var router = express.Router();
 var moment = require('moment');
+
 var MongoClient = require('mongodb').MongoClient, assert = require('assert');
 var mongoose = require('mongoose');
-//var date = moment().format('YYYY-MM-DD HH:mm:ss');
-
-// Connection URL
-var url = 'mongodb://localhost:27017/notice';
+var url = require('../components/mongodb').url;
 
 router.get('/', function (req, res, next) {
     res.render('mongo',{UserName:' ',MenuName:' ' ,Count:' ', Price:' ', date: ' ', UserId:' '});
 });
 
 router.get('/order', function (req, res) {
+    console.log(url);
     let UserName = req.query.UserName;
     MongoClient.connect(url, { useUnifiedTopology: true }, function (err, client) {
         //assert.equal(null, err);
@@ -57,7 +56,7 @@ router.get('/insert', function (req, res) {
     let Price = req.query.Price;
     var date = moment().format('YYYY-MM-DD HH:mm:ss');
     console.log(UserName,MenuName,Count, Price,date );
-    
+    console.log(url);
     MongoClient.connect(url, { useUnifiedTopology: true }, function (err, client) {
         console.log("Connected successfully to server");
         var db = client.db('notice');

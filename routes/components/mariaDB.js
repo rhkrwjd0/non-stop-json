@@ -1,11 +1,11 @@
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
-    host: 'klbcedmmqp7w17ik.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    host: '172.30.1.36',
     post: 3306,
-    user: 'ekwqnqbogpjzx6tm',
-    password: 'vvkpxgqn64rfwsgy',
-    database: 'i08ik507tp6zc9lp',
+    user: 'root',
+    password: 'Love20@!',
+    database: 'Quoca',
     typeCast: function (field, next) {
         if (field.type == "VAR_STRING") {
             return field.string();

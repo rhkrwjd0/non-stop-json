@@ -5,7 +5,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const app = require('../../app');
-var conn = require('../components/db');
+var conn = require('../components/mariaDB');
 var first = require("../function/first");
 var moment = require('moment');
 

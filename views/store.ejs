@@ -3,6 +3,17 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script>
+
+     $("#home").click(function () {
+            $("form").attr("action", "/notice/home");
+        });
+        function btn_click(str) {
+            if (str == "home") {
+                frm1.action = "/notice/home";
+            }
+        }
+  </script>
   </head>
   <body>
     <h1><%= title %></h1>
@@ -32,11 +43,10 @@
         <tr>
           <td>경도 : <input type="text" name="LongiTude" style="width:89px"></td>
         </tr>
-          <td><input value="등록" type="submit" /> </td> 
+          <td><input value="등록" type="submit" /></td> 
         </tr>
       </table>
     </form>
-
    
   </body>
 </html>

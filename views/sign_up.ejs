@@ -25,6 +25,15 @@
         }
       });
     });
+
+    $("#home").click(function () {
+            $("form").attr("action", "/notice/home");
+        });
+        function btn_click(str) {
+            if (str == "home") {
+                frm1.action = "/notice/home";
+            }
+        }
   </script>
 </head>
 
@@ -35,14 +44,14 @@
   <p>
     <%= title %> !!
   </p>
-  <form action='/users/signup' method="GET">
+  <form  method="GET" name="frm1">
     <table>
       <tr>
-        <td> 아이디 : <input type="text" name="UID" style="width:80px"> 
+        <td> 아이디 : <input type="text" name="UID" style="width:116px" value="<%= UID %>"> 
           <!-- <input type="text"  name="overLap" style="width:44px; color:Red;font-size:9px" value= "<%= overLap %>" disabled > -->
-          <input value="ID중복체크" type="submit" />
+          <input type="submit" value="중복확인" onclick="javascript: frm1.action='/users/idcheck';"/> 
           <span style="width:44px; color:Red;font: size 9px"> <%= overLap %></span>
-          <span style="width:60px; color:Red;font: size 9px"><%= UID %></span>  
+          <!-- <span style="width:60px; color:Red;font: size 9px"><%= UID %></span>   -->
           </td>
       </tr>
       <tr>
@@ -71,10 +80,14 @@
         </td>
       </tr>
       <tr>
-        <td><input value="등록" type="submit" /> </td> 
+        <td><input value="등록" onclick="javascript: frm1.action='/users/signup';"  type="submit" /> 
+          <input value="홈으로" type="submit" onclick='btn_click("home")' />
+        </td> 
+        
       </tr>
     </table>
   </form>
+   
 </body>
 
 </html>
