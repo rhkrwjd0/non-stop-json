@@ -3,33 +3,57 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script>
+    function btn_click(str){                             
+        if(str=="menu"){                                 
+            frm1.action="/menu";      
+        } else if(str=="detail"){      
+            frm1.action="/menu/detail";      
+        }  else if(str=="user"){      
+            frm1.action="/menu/user";      
+        }else if(str=="AllMenu"){      
+            frm1.action="/menu/AllMenu";      
+        }else{
+          frm1.action="/menu/StoreInfo"; 
+        }
+    }
+   </script>
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Hello ! <%= title %> !</p>
+    <p>Hello ! <%= title %></p>
 
-    <form action= '/menu' method = "GET">
-       메뉴이름: <select name="menu"> 
-          <option value="D">Drink</option>
-          <option value="B">Bakery</option>
-          <option value="G">Goods</option>
-        </select>
-      매장넘버: <select name="store">
-          <option value="1">Store1</option>
-          <option value="2">Store2</option>
-          <option value="3">Store3</option>
- 
-        </select>
-        <input type = "submit" value="이동">
+   
+      <form name="frm1" method = "GET">
+      이메일: <select name="email"> 
+        <option value="001">killerjoe@naver.com</option>
+        <option value="002">stillkwak@naver.com</option>
+        <option value="003">wedding@naver.com</option>
+        <option value="004">imsorry@naver.com</option>
+        <option value="005">whatsorry@naver.com</option>
+      </select>
+        <input type = "submit" value="히스토리"  onclick='btn_click("menu");'>
+        <input type = "submit" value="상세내역"  onclick='btn_click("detail");'>
+        <br/><br/> <input type = "submit" value="사용자목록"  onclick='btn_click("user");'>
+        <input type = "submit" value="메뉴목록"  onclick='btn_click("AllMenu");'>
+        <input type = "submit" value="매장목록"  onclick='btn_click("StoreInfo");'>
     </form>
 
-    <form action='/notice/order' method="GET" style="display:inline-block;"> <br/>
-      ======================================<br/><br/>mongo test: 
-      <input value="조회" type="submit" />
-    </form>
+
   </body>
 </html>
 
+
+<!-- 메뉴이름: <select name="menu"> 
+  <option value="Drink">Drink</option>
+  <option value="Bakery">Bakery</option>
+  <option value="Goods">Goods</option>
+</select>
+매장넘버: <select name="store">
+  <option value="Store_1">Store1</option>
+  <option value="Store_2">Store2</option>
+  <option value="Store_3">Store3</option>
+</select> -->
 
 <!-- 
 <table>

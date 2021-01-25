@@ -1,11 +1,79 @@
 {
-    "openTime": "09:00",
-    "closeTime": "20:00",
-    "dayOff" : "매주 일요일",
-    "tel": "062-123-4567",
-    "address": "전체 주소",
-    "lat": "위도",
-    "lon": "경도",
-    "mainImgUrl": "대표이미지 url",
-    "detailImgUrl" : ["매장이미지 나머지 url 여러개"]
+    "StoreInfo": {
+        "Store_01": {
+            "name": "커피룩 백운점",
+            "openTime": "09:00",
+            "closeTime": "20:00",
+            "dayOff": "매주 일요일",
+            "tel": "062-123-4567",
+            "address": "광주광역시 남구 백운1동 35",
+            "lat": "35.1404615",
+            "lon": "126.9059474",
+            "mainImgUrl": "https://www.google.co.kr/maps/place/%EC%BB%A4%ED%94%BC%EB%A3%A9+%EB%B0%B1%EC%9A%B4%EC%A0%90/@35.1404615,126.9059474,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipOd0Jp9sn9QkdibwSQ44D-oIC8ESiiERsbqpRnz!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOd0Jp9sn9QkdibwSQ44D-oIC8ESiiERsbqpRnz%3Dw203-h152-k-no!7i4032!8i3024!4m8!1m2!2m1!1z7Lm07Y6Y!3m4!1s0x0:0xed830330f087af5c!8m2!3d35.1404618!4d126.9059475#",
+            "detailImgUrl": [
+                "https://www.google.co.kr/maps/place/%EC%BB%A4%ED%94%BC%EB%A3%A9+%EB%B0%B1%EC%9A%B4%EC%A0%90/@35.1404615,126.9059474,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipOd0Jp9sn9QkdibwSQ44D-oIC8ESiiERsbqpRnz!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOd0Jp9sn9QkdibwSQ44D-oIC8ESiiERsbqpRnz%3Dw203-h152-k-no!7i4032!8i3024!4m8!1m2!2m1!1z7Lm07Y6Y!3m4!1s0x0:0xed830330f087af5c!8m2!3d35.1404618!4d126.9059475#",
+                "https://www.google.co.kr/maps/place/%EC%BB%A4%ED%94%BC%EB%A3%A9+%EB%B0%B1%EC%9A%B4%EC%A0%90/@35.1404615,126.9059474,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipOd0Jp9sn9QkdibwSQ44D-oIC8ESiiERsbqpRnz!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOd0Jp9sn9QkdibwSQ44D-oIC8ESiiERsbqpRnz%3Dw203-h152-k-no!7i4032!8i3024!4m8!1m2!2m1!1z7Lm07Y6Y!3m4!1s0x0:0xed830330f087af5c!8m2!3d35.1404618!4d126.9059475#"
+            ]
+        },
+        "Store_02": {
+            "name": "그리고커피",
+            "openTime": "09:00",
+            "closeTime": "21:00",
+            "dayOff": "연중 무휴",
+            "tel": "062-992-9292",
+            "address": "광주광역시 동구 충장동 구성로 171",
+            "lat": "35.1494984",
+            "lon": "126.9125162",
+            "mainImgUrl": "https://www.google.co.kr/maps/place/Drawing+Coffee(%EA%B7%B8%EB%A6%AC%EA%B3%A0+%EC%BB%A4%ED%94%BC)/@35.1515964,126.9121594,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPyF5l6VV7OL1qHKm-zfWYBPU9FF7tk7LtzhKKa!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPyF5l6VV7OL1qHKm-zfWYBPU9FF7tk7LtzhKKa%3Dw129-h86-k-no!7i6000!8i4000!4m8!1m2!2m1!1z7Lm07Y6Y!3m4!1s0x0:0xbfbd889841c59dc4!8m2!3d35.1515957!4d126.9121581#",
+            "detailImgUrl": [
+                "https://www.google.co.kr/maps/place/Drawing+Coffee(%EA%B7%B8%EB%A6%AC%EA%B3%A0+%EC%BB%A4%ED%94%BC)/@35.1515964,126.9121594,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPyF5l6VV7OL1qHKm-zfWYBPU9FF7tk7LtzhKKa!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPyF5l6VV7OL1qHKm-zfWYBPU9FF7tk7LtzhKKa%3Dw129-h86-k-no!7i6000!8i4000!4m8!1m2!2m1!1z7Lm07Y6Y!3m4!1s0x0:0xbfbd889841c59dc4!8m2!3d35.1515957!4d126.9121581#",
+                "https://www.google.co.kr/maps/place/Drawing+Coffee(%EA%B7%B8%EB%A6%AC%EA%B3%A0+%EC%BB%A4%ED%94%BC)/@35.1515964,126.9121594,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPyF5l6VV7OL1qHKm-zfWYBPU9FF7tk7LtzhKKa!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPyF5l6VV7OL1qHKm-zfWYBPU9FF7tk7LtzhKKa%3Dw129-h86-k-no!7i6000!8i4000!4m8!1m2!2m1!1z7Lm07Y6Y!3m4!1s0x0:0xbfbd889841c59dc4!8m2!3d35.1515957!4d126.9121581#"
+            ]
+        },
+        "Store_03": {
+            "name":"KAFE'52",
+            "openTime": "09:00",
+            "closeTime": "22:00",
+            "dayOff": "둘째주 일요일",
+            "tel": "062-325-5453",
+            "address": "광주광역시 서구 광천동 죽봉대로 103",
+            "lat": "35.1626777",
+            "lon": "126.8833021",
+            "mainImgUrl":    "https://www.google.co.kr/maps/place/KAFE'52/@35.1626777,126.8833021,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipOPkDx9Gx6vIE34zUQoVpaX07XOR6AQT80mYNyl!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOPkDx9Gx6vIE34zUQoVpaX07XOR6AQT80mYNyl%3Dw114-h86-k-no!7i4160!8i3120!4m8!1m2!2m1!1z7Lm07Y6Y!3m4!1s0x35718c0e1b8af937:0xc71bb6a89cc3dc5e!8m2!3d35.1626777!4d126.8833021#",
+            "detailImgUrl": [
+                "https://www.google.co.kr/maps/place/KAFE'52/@35.1626777,126.8833021,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMpc5LI9Ug9DgNSmOCre93SH8dR3zPfLCjdNRID!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMpc5LI9Ug9DgNSmOCre93SH8dR3zPfLCjdNRID%3Dw203-h152-k-no!7i4160!8i3120!4m8!1m2!2m1!1z7Lm07Y6Y!3m4!1s0x35718c0e1b8af937:0xc71bb6a89cc3dc5e!8m2!3d35.1626777!4d126.8833021#",
+                "https://www.google.co.kr/maps/place/KAFE'52/@35.1626777,126.8833021,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMpc5LI9Ug9DgNSmOCre93SH8dR3zPfLCjdNRID!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMpc5LI9Ug9DgNSmOCre93SH8dR3zPfLCjdNRID%3Dw203-h152-k-no!7i4160!8i3120!4m8!1m2!2m1!1z7Lm07Y6Y!3m4!1s0x35718c0e1b8af937:0xc71bb6a89cc3dc5e!8m2!3d35.1626777!4d126.8833021#"
+            ]
+        },
+        "Store_04": {
+            "name": "카페 넌지시",
+            "openTime": "09:00",
+            "closeTime": "20:00",
+            "dayOff": "매주 월요일",
+            "tel": "062-999-9921",
+            "address": "광주광역시 동구 지산동 675-45",
+            "lat": "35.1515964",
+            "lon": "126.9121594",
+            "mainImgUrl": "https://www.google.co.kr/maps/place/%EC%B9%B4%ED%8E%98+%EB%84%8C%EC%A7%80%EC%8B%9C/@35.1525398,126.9270695,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMJ5PuuX8GiTmdZHSrBvS0raWEdQVUOdisqLpOD!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMJ5PuuX8GiTmdZHSrBvS0raWEdQVUOdisqLpOD%3Dw114-h86-k-no!7i4032!8i3024!4m8!1m2!2m1!1z7Lm07Y6Y!3m4!1s0x0:0x6bc9d2f296882a86!8m2!3d35.1525409!4d126.9270685#",
+            "detailImgUrl": [
+                "https://www.google.co.kr/maps/place/%EC%B9%B4%ED%8E%98+%EB%84%8C%EC%A7%80%EC%8B%9C/@35.1525398,126.9270695,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMJ5PuuX8GiTmdZHSrBvS0raWEdQVUOdisqLpOD!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMJ5PuuX8GiTmdZHSrBvS0raWEdQVUOdisqLpOD%3Dw114-h86-k-no!7i4032!8i3024!4m8!1m2!2m1!1z7Lm07Y6Y!3m4!1s0x0:0x6bc9d2f296882a86!8m2!3d35.1525409!4d126.9270685#",
+                "https://www.google.co.kr/maps/place/%EC%B9%B4%ED%8E%98+%EB%84%8C%EC%A7%80%EC%8B%9C/@35.1525398,126.9270695,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNJFq6nf6VxAC8StHGW6LcvmaD9LbO3lWz0CWEt!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNJFq6nf6VxAC8StHGW6LcvmaD9LbO3lWz0CWEt%3Dw203-h270-k-no!7i3024!8i4032!4m8!1m2!2m1!1z7Lm07Y6Y!3m4!1s0x0:0x6bc9d2f296882a86!8m2!3d35.1525409!4d126.9270685#"
+            ]
+        },
+        "Store_05": {
+            "name": "강리커피",
+            "openTime": "08:00",
+            "closeTime": "24:00",
+            "dayOff": "매달 2,4주 일요일",
+            "tel": "062-967-7657",
+            "address": "광주광역시 동구 지산동 476",
+            "lat": "35.1525398",
+            "lon": "126.9270695",
+            "mainImgUrl": "https://www.google.co.kr/maps/place/%EA%B0%95%EB%A6%AC%EC%BB%A4%ED%94%BC/@35.1457751,126.9307744,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNSqz-PurPVFrJVotB_vjUJoyD3ftxSJtLbahtZ!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNSqz-PurPVFrJVotB_vjUJoyD3ftxSJtLbahtZ%3Dw114-h86-k-no!7i4160!8i3120!4m8!1m2!2m1!1z7Lm07Y6Y!3m4!1s0x0:0x8458f7b316da4799!8m2!3d35.1457751!4d126.9307753#",
+            "detailImgUrl": [
+                "https://www.google.co.kr/maps/place/%EA%B0%95%EB%A6%AC%EC%BB%A4%ED%94%BC/@35.1457751,126.9307744,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNSqz-PurPVFrJVotB_vjUJoyD3ftxSJtLbahtZ!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNSqz-PurPVFrJVotB_vjUJoyD3ftxSJtLbahtZ%3Dw114-h86-k-no!7i4160!8i3120!4m8!1m2!2m1!1z7Lm07Y6Y!3m4!1s0x0:0x8458f7b316da4799!8m2!3d35.1457751!4d126.9307753#",
+                "https://www.google.co.kr/maps/place/%EA%B0%95%EB%A6%AC%EC%BB%A4%ED%94%BC/@35.1457751,126.9307744,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNSqz-PurPVFrJVotB_vjUJoyD3ftxSJtLbahtZ!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNSqz-PurPVFrJVotB_vjUJoyD3ftxSJtLbahtZ%3Dw114-h86-k-no!7i4160!8i3120!4m8!1m2!2m1!1z7Lm07Y6Y!3m4!1s0x0:0x8458f7b316da4799!8m2!3d35.1457751!4d126.9307753#"
+            ]
+        }
+    }
 }

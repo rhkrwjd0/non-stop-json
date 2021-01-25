@@ -1,9 +1,34 @@
-	
-	
-	{
-            "nick": "닉네임",
-            "email": "yhl0519@naver.com",
-            "tel": "01072443978",
-            "CmCode" : "C or M"
+{
+    "User": {
+        "User_01": {
+            "nick": "조형기의운전교실",
+            "email": "killerjoe@naver.com",
+            "tel": "01072443978",
+            "CmCode": "C"
+        },
+        "User_02": {
+            "nick": "곽한구중고차샵",
+            "email": "stillkwak@naver.com",
+            "tel": "01099910293",
+            "CmCode": "M"
+        },
+        "User_03": {
+            "nick": "서장훈의행복웨딩",
+            "email": "wedding@naver.com",
+            "tel": "01072443978",
+            "CmCode": "M"
+        },
+        "User_04": {
+            "nick": "내가미안해",
+            "email": "imsorry@naver.com",
+            "tel": "01072443978",
+            "CmCode": "C"
+        },
+        "User_05": {
+            "nick": "뭐가미안한데",
+            "email": "whatsorry@naver.com",
+            "tel": "01072443978",
+            "CmCode": "C"
         }
-    
+    }
+}

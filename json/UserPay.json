@@ -1,12 +1,54 @@
-{ // 사용자 이메일로 주문내역 요청하면 주문내역들 돌려주기
-    "210121-001": { // 주문내역 5개정도..?
-        "orderNum": "10", // 매장주문번호 스벅 A-10같은..
-        "payUid": "210121-001", // 결제uid 아직 몰라서 아무렇게나 고유한 아이디 만들기
-        "orderCnt": 3,
-        "firstMenuName": "아무 메뉴이름",
-        "orderStatus": "준비완료",
-        "payCompleteTime": "2021-01-21 10:53",
-        "menuCompleteTime": "2021-01-21 10:55", // 준비완료 안되면 아무렇게나 0이든 뭐든 아직이라는 표시 해주세요.
-        "totalPrice": "15000"
+{
+    "UserPay": { 
+        "210121-001": { 
+            "orderNum": "D001",
+            "payUid": "210121-D001",
+            "orderCnt": 3,
+            "firstMenuName": "자스민그린티",
+            "orderStatus": "준비완료",
+            "payCompleteTime": "2021-01-21 10:53",
+            "menuCompleteTime": "2021-01-21 10:55",
+            "totalPrice": "10000"
+        },
+        "210121-002": {
+            "orderNum": "B001", 
+            "payUid": "210121-001", 
+            "orderCnt": 2,
+            "firstMenuName": "고로케",
+            "orderStatus": "준비완료",
+            "payCompleteTime": "2021-01-21 11:13",
+            "menuCompleteTime": "준비중",
+            "totalPrice": "3000"
+        },
+        "210121-003": { 
+            "orderNum": "D002", 
+            "payUid": "210121-D002", 
+            "orderCnt": 3,
+            "firstMenuName": "카페라떼",
+            "orderStatus": "준비완료",
+            "payCompleteTime": "2021-01-21 11:21",
+            "menuCompleteTime": "2021-01-21 11:25",
+            "totalPrice": "15000"
+        },
+        "210121-004": { 
+            "orderNum": "G001", 
+            "payUid": "210121-G001", 
+            "orderCnt": 1,
+            "firstMenuName": "화이트초콜릿",
+            "orderStatus": "준비완료",
+            "payCompleteTime": "2021-01-21 12:03",
+            "menuCompleteTime": "2021-01-21 12:04", 
+            "totalPrice": "4600"
+        },
+        "210121-005": { 
+            "orderNum": "G002",
+            "payUid": "210121-G002", 
+            "orderCnt": 3,
+            "firstMenuName": "엔로버초콜릿",
+            "orderStatus": "준비완료",
+            "payCompleteTime": "2021-01-21 13:53",
+            "menuCompleteTime": "2021-01-21 13:55", 
+            "totalPrice": "9000"
+        }
     }
 }

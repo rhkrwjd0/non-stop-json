@@ -1,41 +1,179 @@
 
 {
-    "Drink": { // 음료 5개
+    "Drink": {
         "D001": {
             "id":"D001",
-            "name": "이름",
-            "enName": "메뉴 영어로..",
-            "price": "가격",
-            "imgUrl": "메뉴사진url",
+            "name": "자스민그린티",
+            "enName": "greentea-jasmine",
+            "price": "3000",
+            "imgUrl": "https://www.google.co.kr/maps/place/%EA%B3%B5%EC%B0%A8+%EB%82%98%EC%A3%BC%EB%B9%9B%EA%B0%80%EB%9E%8C%EC%A0%90/@35.0227413,126.7851429,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipO-3Rf6aLas0RFiFp5VBk64ObtzeKEbjmlxQNl7!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipO-3Rf6aLas0RFiFp5VBk64ObtzeKEbjmlxQNl7%3Dw203-h152-k-no!7i4032!8i3024!4m8!1m2!2m1!1z64us66as64qUIOy7pO2UvCDrgpjso7ztmIHsi6A!3m4!1s0x0:0x60050318822f1047!8m2!3d35.022741!4d126.7851428#",
             "option": {
                 "temp": ["Hot","Ice"],
-                "size": ["Tall","Grande","Venti"], // 사이즈 1,2개여도됨
+                "size": ["Small","Large"],
                 "cup": ["매장컵","일회용컵","개인컵"]
             },
-            "best": true // 베스트 한두개만 체크해주시면 표시할게요
+            "best": true 
+        },
+        "D002": {
+            "id":"D002",
+            "name": "아메리카노",
+            "enName": "Americano",
+            "price": "1000",
+            "imgUrl": "https://www.google.co.kr/maps/place/%EA%B3%B5%EC%B0%A8+%EB%82%98%EC%A3%BC%EB%B9%9B%EA%B0%80%EB%9E%8C%EC%A0%90/@35.0227413,126.7851429,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipO-3Rf6aLas0RFiFp5VBk64ObtzeKEbjmlxQNl7!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipO-3Rf6aLas0RFiFp5VBk64ObtzeKEbjmlxQNl7%3Dw203-h152-k-no!7i4032!8i3024!4m8!1m2!2m1!1z64us66as64qUIOy7pO2UvCDrgpjso7ztmIHsi6A!3m4!1s0x0:0x60050318822f1047!8m2!3d35.022741!4d126.7851428#",
+            "option": {
+                "temp": ["Hot","Ice"],
+                "size": ["Small","Large"],
+                "cup": ["매장컵","일회용컵","개인컵"]
+            },
+            "best": true 
+        },
+        "D003": {
+            "id":"D003",
+            "name": "카페라떼",
+            "enName": "CafeLatte",
+            "price": "2000",
+            "imgUrl": "https://www.google.co.kr/maps/place/%EC%BB%A4%ED%94%BC%EB%A3%A9+%EB%B0%B1%EC%9A%B4%EC%A0%90/@35.1404615,126.9059474,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMWo2xRgBXrJQIUEs6qu3na11klJBbowj5mg31D!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMWo2xRgBXrJQIUEs6qu3na11klJBbowj5mg31D%3Dw203-h270-k-no!7i3024!8i4032!4m8!1m2!2m1!1z7Lm07Y6Y!3m4!1s0x0:0xed830330f087af5c!8m2!3d35.1404618!4d126.9059475#",
+            "option": {
+                "temp": ["Hot","Ice"],
+                "size": ["Small","Large"],
+                "cup": ["매장컵","일회용컵","개인컵"]
+            },
+            "best": true 
+        },
+        "D004": {
+            "id":"D004",
+            "name": "바닐라라떼",
+            "enName": "VanillaLatte",
+            "price": "2000",
+            "imgUrl": "https://www.google.co.kr/maps/place/%EA%B3%B5%EC%B0%A8+%EB%82%98%EC%A3%BC%EB%B9%9B%EA%B0%80%EB%9E%8C%EC%A0%90/@35.0227413,126.7851429,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipO-3Rf6aLas0RFiFp5VBk64ObtzeKEbjmlxQNl7!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipO-3Rf6aLas0RFiFp5VBk64ObtzeKEbjmlxQNl7%3Dw203-h152-k-no!7i4032!8i3024!4m8!1m2!2m1!1z64us66as64qUIOy7pO2UvCDrgpjso7ztmIHsi6A!3m4!1s0x0:0x60050318822f1047!8m2!3d35.022741!4d126.7851428#",
+            "option": {
+                "temp": ["Hot","Ice"],
+                "size": ["Small","Large"],
+                "cup": ["매장컵","일회용컵","개인컵"]
+            },
+            "best": true 
+        },
+        "D005": {
+            "id":"D005",
+            "name": "카라멜마끼야또",
+            "enName": "CaramelMakiyato",
+            "price": "3000",
+            "imgUrl": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160702_183%2Fwjstjf820_1467434003019fo502_JPEG%2F20160702_130411.jpg&type=sc960_832",
+            "option": {
+                "temp": ["Hot","Ice"],
+                "size": ["Small","Large"],
+                "cup": ["매장컵","일회용컵","개인컵"]
+            },
+            "best": true 
         }
     },
-    "Bakery": { // 베이커리 5개
+    "Bakery": { 
         "B001": {
             "id":"B001",
-            "name": "이름",
-            "enName": "메뉴 영어로..",
-            "price": "가격",
-            "imgUrl": "메뉴사진url",
+            "name": "홍게빵",
+            "enName": "CrabBread",
+            "price": "2000",
+            "imgUrl": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2Fdata44%2F2009%2F5%2F25%2F253%2Fimg_0862_julie7000.jpg&type=sc960_832",
             "option": {
-                "warm": ["따뜻하게 데움", "데우지않음"] // 옵션 없으면 option:{} 이렇게만 두시면됩니다.
+                "warm": ["따뜻하게 데움", "데우지않음"]
+            },
+            "best": false
+        },
+        "B002": {
+            "id":"B002",
+            "name": "고로케",
+            "enName": "Croquette",
+            "price": "2000",
+            "imgUrl": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA4MDFfMjEy%2FMDAxNTk2MjU2MTczMjY5.Ihm1ZIahMvir4kLnxCYEByFPp8Twp9pFloCraA7jItEg.Zeka6pJ--2GQeX1HpJyRVw50RB1Bk6y_F10DAam-2sQg.JPEG.jdr21035%2FIMG_9226.jpg&type=sc960_832",
+            "option": {
+                "warm": ["따뜻하게 데움", "데우지않음"]
+            },
+            "best": false
+        },
+        "B003": {
+            "id":"B003",
+            "name": "코코넛빵",
+            "enName": "CoconutBread",
+            "price": "2000",
+            "imgUrl": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2Fdata44%2F2009%2F5%2F25%2F253%2Fimg_0862_julie7000.jpg&type=sc960_832",
+            "option": {
+                "warm": ["따뜻하게 데움", "데우지않음"]
+            },
+            "best": false
+        },
+        "B004": {
+            "id":"B004",
+            "name": "크림빵",
+            "enName": "CreamBread",
+            "price": "1000",
+            "imgUrl": "https://www.google.co.kr/maps/place/%EA%B3%B5%EC%B0%A8+%EB%82%98%EC%A3%BC%EB%B9%9B%EA%B0%80%EB%9E%8C%EC%A0%90/@35.0227413,126.7851429,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipO-3Rf6aLas0RFiFp5VBk64ObtzeKEbjmlxQNl7!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipO-3Rf6aLas0RFiFp5VBk64ObtzeKEbjmlxQNl7%3Dw203-h152-k-no!7i4032!8i3024!4m8!1m2!2m1!1z64us66as64qUIOy7pO2UvCDrgpjso7ztmIHsi6A!3m4!1s0x0:0x60050318822f1047!8m2!3d35.022741!4d126.7851428#",
+            "option": {
+                "warm": ["따뜻하게 데움", "데우지않음"]
+            },
+            "best": false
+        },
+        "B005": {
+            "id":"B005",
+            "name": "우유빵",
+            "enName": "MilkBread",
+            "price": "1000",
+            "imgUrl": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDExMDhfNCAg%2FMDAxNjA0ODM5NTg1MDAw.lD8OGUJyKmwc_BPEqoHikq9sYfj8fJTPCiQI59hqFEQg.1dopcUxIUqBeAMT4LcNugkhMouv2JNfCoITDgev0YNQg.JPEG.cyh_0919%2F10.jpg&type=sc960_832",
+            "option": {
+                "warm": ["따뜻하게 데움", "데우지않음"]
             },
             "best": false
         }
     },
-    "Goods": { // 상품 5개
+    "Goods": { 
         "G001": {
             "id":"G001",
-            "name": "이름",
-            "enName": "메뉴 영어로..",
-            "price": "가격",
-            "imgUrl": "메뉴사진url",
-            "option" : {}
+            "name": "감귤초콜릿",
+            "enName": "TangerineChoco",
+            "price": "500",
+            "imgUrl": "https://search.pstatic.net/sunny/?src=http%3A%2F%2Fimg4.tmon.kr%2Fcdn3%2Fdeals%2F2020%2F06%2F19%2F3809305994%2Ffront_347fb_erbcs.jpg&type=sc960_832",
+            "option" : {
+                "wrapping" : ["Y","N"]
+            }
+        },
+        "G002": {
+            "id":"G002",
+            "name": "쟈스민향디퓨저",
+            "enName": "defuserJasmine",
+            "price": "5000",
+            "imgUrl": "https://search.pstatic.net/sunny/?src=https%3A%2F%2Fimage.ohou.se%2Fi%2Fbucketplace-v2-development%2Fuploads%2Fcards%2Fsnapshots1582487049_877100.jpeg%3Fgif%3D1%26w%3D720&type=a340",
+            "option" : {
+                "wrapping" : ["Y","N"]
+            }
+        },
+        "G003": {
+            "id":"G003",
+            "name": "코튼향디퓨저",
+            "enName": "defusercotton",
+            "price": "5000",
+            "imgUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fshopping-phinf.pstatic.net%2Fmain_1771863%2F17718630144.jpg&type=a340",
+            "option" : {
+                "wrapping" : ["Y","N"]
+            }
+        },
+        "G004": {
+            "id":"G004",
+            "name": "엔로버초콜릿",
+            "enName": "enroberChoco",
+            "price": "6000",
+            "imgUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fdbscthumb-phinf.pstatic.net%2F2765_000_352%2F20190726105736310_F3R1K7HWY.jpg%2F10381554.jpg%3Ftype%3Dm4500_4500_fst&type=sc960_832",
+            "option" : {
+                "wrapping" : ["Y","N"]
+            }
+        },
+        "G005": {
+            "id":"G005",
+            "name": "화이트초콜릿",
+            "enName": "whiteChoco",
+            "price": "600",
+            "imgUrl": "https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20190110_88%2Fbogazicidoguhan_1547130539982GArEp_JPEG%2F70436840607290496_2076867157.jpg&type=sc960_832",
+            "option" : {
+                "wrapping" : ["Y","N"]
+            }
         }
     }
 }
