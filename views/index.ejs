@@ -4,6 +4,7 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   <script>
+    
     function btn_click(str){                             
         if(str=="menu"){                                 
             frm1.action="/menu";      
@@ -13,11 +14,12 @@
             frm1.action="/menu/user";      
         }else if(str=="AllMenu"){      
             frm1.action="/menu/AllMenu";      
-        }else{
+        }else if(str=="StoreInfo"){
           frm1.action="/menu/StoreInfo"; 
         }
     }
    </script>
+
   </head>
   <body>
     <h1><%= title %></h1>
@@ -25,14 +27,26 @@
 
    
       <form name="frm1" method = "GET">
-      이메일: <select name="email"> 
-        <option value="001">killerjoe@naver.com</option>
-        <option value="002">stillkwak@naver.com</option>
-        <option value="003">wedding@naver.com</option>
-        <option value="004">imsorry@naver.com</option>
-        <option value="005">whatsorry@naver.com</option>
+       이메일: <select name="email"> 
+        <option value="drivejoe@naver.com">drivejoe@naver.com</option>
+        <option value="stillkwak@naver.com">stillkwak@naver.com</option>
+        <option value="wedding@naver.com">wedding@naver.com</option>
       </select>
         <input type = "submit" value="히스토리"  onclick='btn_click("menu");'>
+        <select name="payuid"> 
+          <option value="210121-D001">210121-D001</option>
+          <option value="210121-B00">210121-B001</option>
+          <option value="210121-D002">210121-D002</option>
+          <option>============</option>
+          <option value="210121-G001">210121-G001</option>
+          <option value="210301-G002">210301-G002</option>
+          <option value="210302-G002">210302-G002</option>
+          <option>============</option>
+          <option value="210121-G002">210121-G002</option>
+          <option value="210302-G003">210302-G003</option>
+          <option value="210303-G003">210303-G003</option>
+        </select>
+ 
         <input type = "submit" value="상세내역"  onclick='btn_click("detail");'>
         <br/><br/> <input type = "submit" value="사용자목록"  onclick='btn_click("user");'>
         <input type = "submit" value="메뉴목록"  onclick='btn_click("AllMenu");'>

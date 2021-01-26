@@ -17,15 +17,31 @@ const { json } = require('express');
 router.get('/', function (req, res, next) {
     console.log("history");
      let email = req.query.email;
+     //let semail = email.split('@');
      console.log(email);
-     res.send(JUserPay.UserPay['210121-'+email]);
+     res.send(JUserPay[email]);
 });
 router.get('/detail', function (req, res, next) {
     console.log("detail");
     let email = req.query.email;
-    console.log(email);
-    res.send(JUserPayDetail.UserPayDetail['210121-'+email]);
+    let payuid = req.query.payuid;
+    console.log(payuid);
+
+    res.send(JUserPayDetail.UserPayDetail[payuid]);
+
+    
+    
+  //  let payUid = JUserPay['drivejoe@naver.com'][payUid];
+   // console.log(payUid);
+    //if(email == )
+    
+    //console.log(detail);
+    //res.render("index",{title:'Quoca',detail:})
+   // res.send(JUserPayDetail.UserPayDetail[email]);
 });
+
+
+
 router.get('/user', function (req, res, next) {
     console.log("user");
     res.send(JUser);
