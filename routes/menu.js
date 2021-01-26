@@ -23,7 +23,7 @@ router.get('/', function (req, res, next) {
 });
 router.get('/detail', function (req, res, next) {
     console.log("detail");
-    let payuid = req.query.payuid;
+    let payuid = req.query.payUid;
     console.log(payuid);
     res.send(JUserPayDetail.UserPayDetail[payuid]);
 });

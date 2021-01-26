@@ -26,43 +26,25 @@
     <h1><%= title %></h1>
     <p>Hello ! <%= title %></p>
       <form name="frm1" method = "GET">
-       /menu?email= <select name="email"> 
-        <option value="drivejoe@naver.com">drivejoe@naver.com</option>
-        <option value="stillkwak@naver.com">stillkwak@naver.com</option>
-        <option value="wedding@naver.com">wedding@naver.com</option>
-        <option value="imsorry@naver.com">imsorry@naver.com</option>
-        <option value="whatsorry@naver.com">whatsorry@naver.com</option>
-      </select>
-        <input type = "submit" value="주문내역"  onclick='btn_click("menu");'>
+       /menu?email= <input type="text" name ="email"> 
+       <input type = "submit" value="주문내역"  onclick='btn_click("menu");'><br/>
+       drivejoe@naver.com,  drivejoe@naver.com,  wedding@naver.com,  imsorry@naver.com,  whatsorry@naver.com 
+     
+        
     </form> <br/><br/>
 
     <form name="frm2" method="GET">
-      /menu/detail?payuid= <select name="payuid" > 
-          <option >==drivejoe@naver.com==</option>
-          <option value="210121-D001">210121-D001</option>
-          <option value="210121-B001">210121-B001</option>
-          <option value="210121-D002">210121-D002</option>
-          <option >==stillkwak@naver.com==</option>
-          <option value="210121-G001">210121-G001</option>
-          <option value="210301-G002">210301-G002</option>
-          <option value="210302-G002">210302-G002</option>
-          <option >==swedding@naver.com==</option>
-          <option value="210121-G002">210121-G002</option>
-          <option value="210302-G003">210302-G003</option>
-          <option value="210303-G003">210303-G003</option>
-        </select>
-        <input type = "submit" value="주문내역상세"  onclick='btn_click("detail");'>
+      /menu/detail?payuid= <input type="text" name="payUid">
+        <input type = "submit" value="주문내역상세"  onclick='btn_click("detail");'><br/>
+      210121-D001, 210121-B001, 210121-D002, 210121-G001, 210301-G002, 210302-G002, 210121-G002, 210302-G003, 210303-G003    
+     
+        
     </form> <br/><br/>
 
     <form name="frm3" method="GET">
-      /menu/user?email= <select name="email"> 
-        <option value="drivejoe@naver.com">drivejoe@naver.com</option>
-        <option value="stillkwak@naver.com">stillkwak@naver.com</option>
-        <option value="wedding@naver.com">wedding@naver.com</option>
-        <option value="imsorry@naver.com">imsorry@naver.com</option>
-        <option value="whatsorry@naver.com">whatsorry@naver.com</option>
-      </select>
-        <input type = "submit" value="사용자정보"  onclick='btn_click("user");'>
+      /menu/user?email= <input type="text" name ="email"> 
+      <input type = "submit" value="사용자정보"  onclick='btn_click("user");'> <br/>
+      drivejoe@naver.com,  drivejoe@naver.com,  wedding@naver.com,  imsorry@naver.com,  whatsorry@naver.com 
     </form><br/><br/>
 
     <form name="frm4" method="GET">
@@ -72,37 +54,3 @@
 
   </body>
 </html>
-
-
-<!-- 메뉴이름: <select name="menu"> 
-  <option value="Drink">Drink</option>
-  <option value="Bakery">Bakery</option>
-  <option value="Goods">Goods</option>
-</select>
-매장넘버: <select name="store">
-  <option value="Store_1">Store1</option>
-  <option value="Store_2">Store2</option>
-  <option value="Store_3">Store3</option>
-</select> -->
-
-<!-- 
-<table>
-  <tr>
-    <td>
-       아 이 디 : <input type="text" style="width:80px">
-      </td>
-    </td>
-  </tr>
-  <tr>
-    <td>
-       패스워드 : <input type="text" style= "width:80px">
-      </td>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <input type="button" style = "width:68px; height:23px"  value="회원가입"/>
-      <input type="button" style = "width:60px; height:23px"  value="로그인"/>
-    </td>
-   </tr>
-</table> -->
