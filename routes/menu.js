@@ -44,8 +44,23 @@ router.get('/detail', function (req, res, next) {
 
 router.get('/user', function (req, res, next) {
     console.log("user");
-    res.send(JUser);
+    const email = req.query.email
+    if (email == 'drivejoe@naver.com') {
+        res.json(JUser.User.User_01)
+    } else if (email == 'stillkwak@naver.com') {
+        res.json(JUser.User.User_02)
+    } else if (email == 'wedding@naver.com') {
+        res.json(JUser.User.User_03)
+    } else if (email == 'imsorry@naver.com') {
+        res.json(JUser.User.User_04)
+    } else if (email == 'whatsorry@naver.com') {
+        res.json(JUser.User.User_05)
+    } else {
+        res.json({msg: '이메일 확인!!!'})
+    }
+   
 });
+
 router.get('/AllMenu', function (req, res, next) {
     console.log("AllMenu");
     res.send(Jmenu);
