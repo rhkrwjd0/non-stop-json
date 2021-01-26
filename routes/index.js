@@ -12,7 +12,7 @@ var JUserPayDetail = require("../json//UserPayDetail.json");
 
 
 router.get('/', function (req, res, next) {
-    res.render('index', { title: 'Quoca!'});
+    res.render('index', { title: 'Quoca!!'});
   });
 
   
