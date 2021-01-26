@@ -23,21 +23,9 @@ router.get('/', function (req, res, next) {
 });
 router.get('/detail', function (req, res, next) {
     console.log("detail");
-    let email = req.query.email;
     let payuid = req.query.payuid;
     console.log(payuid);
-
     res.send(JUserPayDetail.UserPayDetail[payuid]);
-
-    
-    
-  //  let payUid = JUserPay['drivejoe@naver.com'][payUid];
-   // console.log(payUid);
-    //if(email == )
-    
-    //console.log(detail);
-    //res.render("index",{title:'Quoca',detail:})
-   // res.send(JUserPayDetail.UserPayDetail[email]);
 });
 
 

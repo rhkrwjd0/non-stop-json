@@ -4,57 +4,71 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   <script>
-    
+
     function btn_click(str){                             
         if(str=="menu"){                                 
             frm1.action="/menu";      
         } else if(str=="detail"){      
-            frm1.action="/menu/detail";      
+            frm2.action="/menu/detail";      
         }  else if(str=="user"){      
-            frm1.action="/menu/user";      
+            frm3.action="/menu/user";      
         }else if(str=="AllMenu"){      
-            frm1.action="/menu/AllMenu";      
+            frm4.action="/menu/AllMenu";      
         }else if(str=="StoreInfo"){
-          frm1.action="/menu/StoreInfo"; 
+          frm4.action="/menu/StoreInfo"; 
         }
     }
+
    </script>
 
   </head>
   <body>
     <h1><%= title %></h1>
     <p>Hello ! <%= title %></p>
-
-   
       <form name="frm1" method = "GET">
-       이메일: <select name="email"> 
+       /menu?email= <select name="email"> 
         <option value="drivejoe@naver.com">drivejoe@naver.com</option>
         <option value="stillkwak@naver.com">stillkwak@naver.com</option>
         <option value="wedding@naver.com">wedding@naver.com</option>
         <option value="imsorry@naver.com">imsorry@naver.com</option>
         <option value="whatsorry@naver.com">whatsorry@naver.com</option>
       </select>
-        <input type = "submit" value="히스토리"  onclick='btn_click("menu");'>
-        <select name="payuid"> 
+        <input type = "submit" value="주문내역"  onclick='btn_click("menu");'>
+    </form> <br/><br/>
+
+    <form name="frm2" method="GET">
+      /menu/detail?payuid= <select name="payuid" > 
+          <option >==drivejoe@naver.com==</option>
           <option value="210121-D001">210121-D001</option>
-          <option value="210121-B00">210121-B001</option>
+          <option value="210121-B001">210121-B001</option>
           <option value="210121-D002">210121-D002</option>
-          <option>============</option>
+          <option >==stillkwak@naver.com==</option>
           <option value="210121-G001">210121-G001</option>
           <option value="210301-G002">210301-G002</option>
           <option value="210302-G002">210302-G002</option>
-          <option>============</option>
+          <option >==swedding@naver.com==</option>
           <option value="210121-G002">210121-G002</option>
           <option value="210302-G003">210302-G003</option>
           <option value="210303-G003">210303-G003</option>
         </select>
- 
-        <input type = "submit" value="상세내역"  onclick='btn_click("detail");'>
-        <br/><br/> <input type = "submit" value="사용자목록"  onclick='btn_click("user");'>
-        <input type = "submit" value="메뉴목록"  onclick='btn_click("AllMenu");'>
-        <input type = "submit" value="매장목록"  onclick='btn_click("StoreInfo");'>
-    </form>
+        <input type = "submit" value="주문내역상세"  onclick='btn_click("detail");'>
+    </form> <br/><br/>
 
+    <form name="frm3" method="GET">
+      /menu/user?email= <select name="email"> 
+        <option value="drivejoe@naver.com">drivejoe@naver.com</option>
+        <option value="stillkwak@naver.com">stillkwak@naver.com</option>
+        <option value="wedding@naver.com">wedding@naver.com</option>
+        <option value="imsorry@naver.com">imsorry@naver.com</option>
+        <option value="whatsorry@naver.com">whatsorry@naver.com</option>
+      </select>
+        <input type = "submit" value="사용자정보"  onclick='btn_click("user");'>
+    </form><br/><br/>
+
+    <form name="frm4" method="GET">
+      /menu/AllMenu? <input type = "submit" value="메뉴목록"  onclick='btn_click("AllMenu");'><br/><br/>
+      /menu/StoreInfo? <input type = "submit" value="매장목록"  onclick='btn_click("StoreInfo");'>
+    </form>
 
   </body>
 </html>
