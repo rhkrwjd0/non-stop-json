@@ -12,6 +12,8 @@ var QstoreRouter = require('./routes/store/index.js'); //매장
 //var menulistRouter = require('./routes/Qmenu/index.js');  //(메뉴)
 //var storeRouter = require('./routes/store.js');  //쿼카테스트 json데이터(매장)
 var noticeRouter = require('./routes/notice/index.js'); //쿼카 몽고db 테스트
+var menuRouter = require('./routes/menu.js'); 
+
 
 var cors = require('cors');
 var app = express();
@@ -37,6 +39,7 @@ app.use('/Qstore',QstoreRouter); //매장
 //app.use('/menumenu',menulistRouter); //메뉴
 //app.use('/store',storeRouter); //쿼카테스트 json데이터(매장)
 app.use('/notice',noticeRouter);  //쿼카 몽고db 테스트
+app.use('/menu',menuRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
