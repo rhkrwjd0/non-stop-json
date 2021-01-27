@@ -7,13 +7,16 @@ var logger = require('morgan');
 var first = require("./function/first");
 var JUserPay = require("../json/UserPay.json");
 var JUserPayDetail = require("../json//UserPayDetail.json");
-
 //quoka
 
 
 router.get('/', function (req, res, next) {
-    res.render('index', { title: 'Quaca!!!'});
+ // var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+  var Url = req.protocol + '://' + req.get('host');
+  res.render('index', { title: 'Quaca!!!', Url: Url});
   });
 
   
 module.exports = router;
+
+

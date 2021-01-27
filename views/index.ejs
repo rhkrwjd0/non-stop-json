@@ -4,7 +4,7 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   <script>
-
+  
     function btn_click(str){                             
         if(str=="menu"){                                 
             frm1.action="/menu";      
@@ -24,9 +24,9 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Hello ! <%= title %></p>
-      <form name="frm1" method = "GET">
-       /menu?email= <input type="text" name ="email"> 
+    <p></p>
+   <form name="frm1" method = "GET">
+    <%= Url %>/menu?email=  <input type="text" name ="email"> 
        <input type = "submit" value="주문내역"  onclick='btn_click("menu");'><br/>
        drivejoe@naver.com,  drivejoe@naver.com,  wedding@naver.com,  imsorry@naver.com,  whatsorry@naver.com 
      
@@ -34,7 +34,7 @@
     </form> <br/><br/>
 
     <form name="frm2" method="GET">
-      /menu/detail?payuid= <input type="text" name="payUid">
+      <%= Url %>/menu/detail?payuid= <input type="text" name="payUid">
         <input type = "submit" value="주문내역상세"  onclick='btn_click("detail");'><br/>
       210121-D001, 210121-B001, 210121-D002, 210121-G001, 210301-G002, 210302-G002, 210121-G002, 210302-G003, 210303-G003    
      
@@ -42,15 +42,16 @@
     </form> <br/><br/>
 
     <form name="frm3" method="GET">
-      /menu/user?email= <input type="text" name ="email"> 
+      <%= Url %>/menu/user?email= <input type="text" name ="email"> 
       <input type = "submit" value="사용자정보"  onclick='btn_click("user");'> <br/>
       drivejoe@naver.com,  drivejoe@naver.com,  wedding@naver.com,  imsorry@naver.com,  whatsorry@naver.com 
     </form><br/><br/>
 
     <form name="frm4" method="GET">
-      /menu/AllMenu <input type = "submit" value="메뉴목록"  onclick='btn_click("AllMenu");'><br/><br/>
-      /menu/StoreInfo <input type = "submit" value="매장목록"  onclick='btn_click("StoreInfo");'>
+      <%= Url %>/menu/AllMenu <input type = "submit" value="메뉴목록"  onclick='btn_click("AllMenu");'><br/><br/>
+      <%= Url %>/menu/StoreInfo <input type = "submit" value="매장목록"  onclick='btn_click("StoreInfo");'>
     </form>
+
 
   </body>
 </html>
