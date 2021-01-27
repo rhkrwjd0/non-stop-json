@@ -11,7 +11,9 @@ var JUserPayDetail = require("../json//UserPayDetail.json");
 //quoka
 
 
+
 router.get('/', function (req, res, next) {
+
     res.render('index', { title: 'Quaca!!!'});
   });
 

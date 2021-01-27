@@ -4,7 +4,9 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   <script>
-
+  
+    var link = document.location.href;
+    document.getElementById("aa").value = link;
     function btn_click(str){                             
         if(str=="menu"){                                 
             frm1.action="/menu";      
@@ -16,6 +18,8 @@
             frm4.action="/menu/AllMenu";      
         }else if(str=="StoreInfo"){
           frm4.action="/menu/StoreInfo"; 
+        }else if(str=="a"){
+          document.getElementById("aa").value = link;
         }
     }
 
@@ -24,7 +28,7 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Hello ! <%= title %></p>
+    <p><button style="width:80px;height:23px" onclick='btn_click("a");'>현재 url </button> : <input type="text" id="aa"></p>
       <form name="frm1" method = "GET">
        /menu?email= <input type="text" name ="email"> 
        <input type = "submit" value="주문내역"  onclick='btn_click("menu");'><br/>
